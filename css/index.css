@@ -1,0 +1,90 @@
+.grid{
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 100;
+    opacity: 20%;
+    width: 100vw;
+    height: 1000%;
+}
+/*여기까지 그리드*/
+
+/* 내용 */
+main {
+    position: relative;
+    z-index: 1;
+}
+body{
+    overflow-y: scroll;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    background-color: #fff;
+	font-family: 'Pretendard_Medium';
+}
+#wrap{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+/* header {
+    background-color: #8b3ef07d;
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    padding-left: 6vw;
+	font-family: 'Pretendard_Medium';
+    z-index: 20;
+}
+
+header ul {
+    display: flex;
+    position: absolute;
+    top: 2vw;
+}
+
+header ul li {
+    margin-right: 35px;
+}
+
+header ul li a {
+	font-family: 'Pretendard_Medium';
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+header .main-ul li:nth-child(1) a {
+    color: #71D69F;
+}
+
+header .main-ul li:nth-child(2) a {
+    color: #FFF495;
+}
+
+header .main-ul li:nth-child(3) a {
+    color: #FF917A;
+} */
+
+.main-bg{
+    width: 100vw;
+}
+.main-bg_left,.main-bg_right{
+    position:absolute;
+    height: auto;
+    z-index: 2;
+}
+.main-bg_left{
+    width: 24vw;
+    top: 11vw;
+    left: 31vw;
+}
+.main-bg_right{
+    width: 27vw;
+    top: 30vw;
+    left: 45vw;
+}

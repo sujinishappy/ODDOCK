@@ -1,0 +1,190 @@
+@font-face {
+	font-family: 'Pretendard_ExtraBold';
+	src:url('../img/fonts/Pretendard_ExtraBold.otf');
+}
+@font-face {
+	font-family: 'Pretendard_Black';
+	src:url('../img/fonts/Pretendard-Black.otf');
+}
+@font-face {
+	font-family: 'Pretendard_Bold';
+	src:url('../img/fonts/Pretendard-Bold.otf');
+}
+@font-face {
+	font-family: 'Pretendard_SemiBold';
+	src:url('../img/fonts/Pretendard-SemiBold.otf');
+}
+@font-face {
+	font-family: 'Pretendard_Medium';
+	src:url('../img/fonts/Pretendard-Medium.otf');
+}
+@font-face {
+	font-family: 'Pretendard_Regular';
+	src:url('../img/fonts/AppleSDGothicNeoR.otf');
+}
+@font-face {
+	font-family: 'Pretendard_Light';
+	src:url('../img/fonts/Pretendard-Light.otf');
+}
+@font-face {
+	font-family: 'Pretendard_ExtraLight';
+	src:url('../img/fonts/Pretendard-ExtraLight.otf');
+}
+@font-face {
+	font-family: 'Pretendard_Thin';
+	src:url('../img/fonts/Pretendard-Thin.otf');
+}
+@font-face {
+	font-family: 'Tenada';
+	src:url('../img/fonts/Tenada.TTF');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    overflow-x: hidden;
+    /*cursor: none;*/
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 상위 요소에서 상속된 색상 사용 또는 직접 색상 지정 가능 */
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    width: 100vw;
+    height: auto;
+    background-color: #fff;
+    font-family: 'Pretendard_Medium';
+}
+/* 수직 스크롤 바 스타일 */
+::-webkit-scrollbar {
+    width: 1.4vw; /* 스크롤 바 너비 */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FC3B3C; /* 스크롤 바 색상 */
+    border-radius: 10px; /* 둥근 테두리 */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff; /* 스크롤 바 트랙 색상 */
+}
+
+
+/* 네비게이션 바 */
+header {
+    display: flex;
+    z-index: 20;
+    overflow: hidden;
+    height: 12vh;
+    background-color: #ffc0a9a8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    transition: all 1s ease;
+}
+header:hover{
+    background-color: #ffc0a9e8;
+}
+header.down {
+    top: -10vh;
+}
+header.up {
+    top: 0;
+    transition: all 1s ease;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6vw;
+}
+.logo a {
+    text-decoration: none;
+    font-size: calc(100vw * 28/ 1920);
+    font-weight: bolder;
+    color: #fff;
+    display: inline-block;
+    transition: all 1s ease;
+}
+.nav-right li a:hover,.logo a:hover {
+    color: #FC3B3C;
+    transition: all 0.5s ease;
+}
+header ul {
+    list-style: none;
+    display: flex;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 5vw;
+}
+.nav-right a {
+    color: #fff;
+    font-size: calc(100vw * 24/ 1920);
+    text-decoration: none;
+    margin-left: 4vw;
+}
+@keyframes over{
+    0%{
+        margin-top: 0px;    
+        opacity: 1;
+    }
+    70%{
+        margin-top: -100px;    
+        opacity: .6;
+    }
+    100%{
+        margin-top: -100px;  
+        opacity: 0; 
+    }
+}
+.nav-up {
+    opacity: 0;
+    margin-top: -100px;
+}
+.nav-down{
+    animation: over 2s ease reverse;
+}
