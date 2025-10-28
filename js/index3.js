@@ -115,16 +115,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const GROUPS = 4;
 
   const leftSrcs = [
-    '.../img3/left_1.png',
-    '.../img3/left_2.png',
-    '.../img3/left_3.png',
-    '.../img3/left_4.png'
+    './img3/left_1.png',
+    './img3/left_2.png',
+    './img3/left_3.png',
+    './img3/left_4.png'
   ];
   const rightSrcs = [
-    '.../img3/right_1.png',
-    '.../img3/right_2.png',
-    '.../img3/right_3.png',
-    '.../img3/right_4.png'
+    './img3/right_1.png',
+    './img3/right_2.png',
+    './img3/right_3.png',
+    './img3/right_4.png'
   ];
 
   const section = document.querySelector('#guide');
@@ -247,3 +247,4 @@ document.addEventListener("DOMContentLoaded", () => {
     io.observe(section);
 
   });
+
