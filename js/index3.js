@@ -115,16 +115,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const GROUPS = 4;
 
   const leftSrcs = [
-    '../img3/left_1.png',
-    '../img3/left_2.png',
-    '../img3/left_3.png',
-    '../img3/left_4.png'
+    '.../img3/left_1.png',
+    '.../img3/left_2.png',
+    '.../img3/left_3.png',
+    '.../img3/left_4.png'
   ];
   const rightSrcs = [
-    '../img3/right_1.png',
-    '../img3/right_2.png',
-    '../img3/right_3.png',
-    '../img3/right_4.png'
+    '.../img3/right_1.png',
+    '.../img3/right_2.png',
+    '.../img3/right_3.png',
+    '.../img3/right_4.png'
   ];
 
   const section = document.querySelector('#guide');
@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach(entry => {
         if(entry.isIntersecting){
           // 한 번만 재생하려면 다음 줄 주석 해제
-          // io.unobserve(section);
+          io.unobserve(section);
 
           cols.forEach((col, i) => {
             setTimeout(() => {
@@ -245,4 +245,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: 0.9 });
 
     io.observe(section);
+
   });
