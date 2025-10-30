@@ -242,6 +242,7 @@ section#guide{ height:180vw; background-color:#fff; }
 #system{
   position: relative;
   width: 100vw;
+  margin-top: 10vw;
 }
 #system img{
   width: 100vw;
@@ -547,4 +548,5 @@ section#guide{ height:180vw; background-color:#fff; }
         transform: scale(1.0);
     }
 }
+
 
