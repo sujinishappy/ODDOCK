@@ -187,7 +187,10 @@ section#guide{ height:180vw; background-color:#fff; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFE8E0;
+  background-image: url("../img3/guide_bg2.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 .board{
   width: var(--stickW);
@@ -276,6 +279,9 @@ section#guide{ height:180vw; background-color:#fff; }
     width: 33.4vw;
     height: 18vw;
     background-image: url("../img3/color01.png");
+    background-size: cover;
+  background-position: center;
+  overflow: hidden;
     border-radius: 1.2vw;
     box-shadow: 0 0.6vw 2vw rgba(0,0,0,0.08);
     z-index: 3;
@@ -330,17 +336,33 @@ section#guide{ height:180vw; background-color:#fff; }
   .col.show .cell.top{ transition-delay: 0.08s; }
   .col.show .cell.bottom{ transition-delay: 0.18s; }
 
-  .col:nth-child(1) .top{ background-image: url("../img3/color02.png"); }
-  .col:nth-child(1) .bottom{background-image: url("../img3/color02a.png"); border: #BCBCBC solid 1px;}
+  .col:nth-child(1) .top{ background-image: url("../img3/color02.png");background-size: cover;
+  background-position: center;
+  overflow: hidden; }
+  .col:nth-child(1) .bottom{background-image: url("../img3/color02a.png"); border: #BCBCBC solid 1px; background-size: cover;
+  background-position: center;
+  overflow: hidden;}
 
-  .col:nth-child(2) .top{background-image: url("../img3/color03.png");}
-  .col:nth-child(2) .bottom{background-image: url("../img3/color03a.png")}
+  .col:nth-child(2) .top{background-image: url("../img3/color03.png"); background-size: cover;
+  background-position: center;
+  overflow: hidden;}
+  .col:nth-child(2) .bottom{background-image: url("../img3/color03a.png"); background-size: cover;
+  background-position: center;
+  overflow: hidden; }
 
-  .col:nth-child(3) .top{background-image: url("../img3/color04.png")}
-  .col:nth-child(3) .bottom{background-image: url("../img3/color04a.png")}
+  .col:nth-child(3) .top{background-image: url("../img3/color04.png"); background-size: cover;
+  background-position: center;
+  overflow: hidden;}
+  .col:nth-child(3) .bottom{background-image: url("../img3/color04a.png"); background-size: cover;
+  background-position: center;
+  overflow: hidden;}
 
-  .col:nth-child(4) .top{background-image: url("../img3/color05.png")}
-  .col:nth-child(4) .bottom{background-image: url("../img3/color05a.png")}
+  .col:nth-child(4) .top{background-image: url("../img3/color05.png");background-size: cover;
+  background-position: center;
+  overflow: hidden;}
+  .col:nth-child(4) .bottom{background-image: url("../img3/color05a.png"); background-size: cover;
+  background-position: center;
+  overflow: hidden;}
   
   .col.show{
     transform: translateX(0) scale(1);
