@@ -1026,4 +1026,6 @@ padding-bottom: 2.6vw;
     display: block;
     border-radius: 1.8vw;
     border: .1vw solid #818181;
+    box-shadow: .2vw .3vw .2vw #0000003a;
+
 }
