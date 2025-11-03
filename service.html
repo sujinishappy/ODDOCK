@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODDOCK</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index4.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- <img class="grid" src="./img4/grid.png" alt=""> -->
+        <div class="pointer"></div>
+        <button id="topButton" onclick="scrollToTop()">↑</button>
+        
+        <main>
+            <section id="main">
+                <header id="header">
+                    <span class="logo first"><a href="./index.html">ODDOCK</a></span>
+                    <span class="nav-right">
+                        <ul>
+                            <li class="first"><a href="./index.html">Planning</a></li>
+                            <li class="first"><a href="./video.html">Video</a></li>
+                            <li class="first"><a href="./design_guide.html">Design</a></li>
+                            <li class="first"><a href="./service.html">Service</a></li>
+                        </ul>
+                    </span>
+                </header>
+                <img class="service-bg" src="./img4/main.png" alt="오똑 메인 배경화면">
+                <div class="service_wrap">
+                    <img class="service-bg_left" src="./img4/main_1.png" alt="오똑 메인 배경화면 목업1">
+                    <img class="service-bg_right" src="./img4/main_2.png" alt="오똑 메인 배경화면 목업2">
+                </div>
+            </section>
+            <section id="onboarding">
+                <div class="ob_title">
+                    <img src="./img4/onboarding_title.png" class="onboarding_title">
+                </div>
+                <div class="ob_up">
+                    <!-- <img src="./img4/ob_test_main.png" alt=""> -->
+                    <div class="ob_up_screen">
+                        <div class="ob-line-wrap">
+                            <div class="ob-line-inner">
+                                <object id="ob-line" type="image/svg+xml" data="./img4/ob_test_line.svg"></object>
+                            </div>
+                        </div>
+                        <div class="ob-img-wrap">
+                            <img src="./img4/ob_test_01.png" class="ob-item" alt="">
+                            <img src="./img4/ob_test_02.png" class="ob-item" alt="">
+                            <img src="./img4/ob_test_03.png" class="ob-item" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="ob_down">
+                    <!-- <img src="./img4/ob_test_main.png" alt=""> -->
+                    <div class="ob_down_screen">
+                        <div class="ob-line2-wrap">
+                            <div class="ob-line2-inner">
+                                <object id="ob-line2" type="image/svg+xml" data="./img4/ob_test_line.svg"></object>
+                            </div>
+                        </div>
+                        <div class="ob-img2-wrap">
+                            <img src="./img4/ob_test2_01.png" class="ob-item2" alt="">
+                            <img src="./img4/ob_test2_02.png" class="ob-item2" alt="">
+                            <img src="./img4/ob_test2_03.png" class="ob-item2" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="s_main">
+                <div id="check">
+                    <img src="./img4/check_title.png" class="check_title">
+                    <div class="check01">
+                        <div class="check_group">
+                            <img class="chk-1" src="./img4/check_line.png" alt="">
+                            <img class="chk-2" src="./img4/check_screen.png" alt="">
+                        </div>
+                        <img class="chk-3" src="./img4/check_line2.png" alt="">
+                    </div>
+                </div>
+                <div id="checked">
+                    <div class="checked01">
+                        <img class="chked" src="./img4/checked01.png" alt="">
+                        <img class="chked2" src="./img4/checked_screen.png" alt="">
+                        <div class="checked_group">
+                            <img class="chked-1" src="./img4/checked_1.png" alt="">
+                            <img class="chked-2" src="./img4/checked_2.png" alt="">
+                            <img class="chked-3" src="./img4/checked_3.png" alt="">
+                        </div>
+                    </div>
+                    <img class="dongsing" src="./img4/oddck.png" alt="">
+                    <img class="dongsing2" src="./img4/oddck2.png" alt="">
+                    <img class="dongsing3" src="./img4/oddck3.png" alt="">
+                    <img class="dongsing4" src="./img4/oddck4.png" alt="">
+                    <img class="checked_line" src="./img4/checked_line.png" alt="">
+                </div>
+                <div id="meno">
+                    <img src="./img4/meno_title.png" class="meno_title">
+                    <div class="meno-group">
+                        <img src="./img4/meno_01.png" class="meno-item2" alt="">
+                        <img src="./img4/meno_02.png" class="meno-item2" alt="">
+                        <img src="./img4/meno_03.png" class="meno-item2" alt="">
+                        <img src="./img4/meno_04.png" class="meno-item2" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="schedule">
+                <div class="schedule">
+                    <img class="schedule_title" src="./img4/schedule_title.png">
+                    <div class="schedule-group">
+                        <img src="./img4/schedule_01.png" class="schedule-item2" alt="">
+                        <img src="./img4/schedule_02.png" class="schedule-item2" alt="">
+                        <img src="./img4/schedule_03.png" class="schedule-item2" alt="">
+                    </div>
+                    <img class="schedule_line" src="./img4/schedule_line.png" alt="">
+                </div>
+                <div class="sch_2">
+                    <img class="sch_2_title" src="./img4/sch_2_title.png">
+                    <div class="sch_2-group">
+                        <img src="./img4/sch_2_01.png" class="sch_2-item2" alt="">
+                        <img src="./img4/sch_2_02.png" class="sch_2-item2" alt="">
+                        <img src="./img4/sch_2_03.png" class="sch_2-item2" alt="">
+                        <img src="./img4/sch_2_04.png" class="sch_2-item2" alt="">
+                        <img src="./img4/sch_2_05.png" class="sch_2-item2" alt="">
+                    </div>
+                </div>
+                <div class="diary">
+                    <img class="diary_title" src="./img4/diary_title.png">
+                    <img class="timer" src="./gif/timer.gif" alt="timer" />                
+                </div>
+            </section>
+            <section id="game">
+                <img class="game_title" src="./img4/game_title.png">
+                <div class="cloud">
+                    <img class="cloud-01" src="./img4/cloud01.png">
+                    <img class="cloud-02" src="./img4/cloud02.png">
+                    <img class="cloud-03" src="./img4/cloud03.png">
+                    <img class="cloud-04" src="./img4/cloud04.png">
+                </div>
+                <div class="game-01">
+                    <img class="game_video" src="./gif/game.gif" alt="timer" />                
+                </div>
+                <div class="game-02">
+                    <img src="./img4/game-02_01.png">
+                    <img src="./img4/game-02_02.png">
+                    <img src="./img4/game-02_03.png">
+                </div>
+                <img class="game_line" src="./img4/game-02_line.png">
+                <div class="game-03">
+                    <img src="./img4/game-03_01.png">
+                    <img src="./img4/game-03_02.png">
+                    <img src="./img4/game-03_03.png">
+                </div>
+
+            </section>
+            <section id="otalk">
+                <img class="otalk_frame" src="./img4/frame.png">
+                <img class="otalk_video" src="./gif/otalk.gif" alt="timer" />                
+                <img class="otalk_title" src="./img4/otalk_title.png">
+                <div class="otalks">
+                    <img class="otalks01" src="./img4/otalk-01.png">
+                    <img class="otalks02" src="./img4/otalk-02.png">
+                    <img class="otalks03" src="./img4/otalk-03.png">
+                    <img class="otalks04" src="./img4/otalk-04.png">
+                </div>
+                <div class="otalk_content">
+                    <img class="otalks_01" src="./img4/otalk_01.png">
+                    <img class="otalks_02" src="./img4/otalk_02.png">
+                    <img class="otalks_03" src="./img4/otalk_03.png">
+                </div>
+            </section>
+            <section id="mypage">
+                <img class="mypage_title" src="./img4/mypage_title.png">
+                <div class="mypage_content">
+                    <img class="mypage_01" src="./img4/mypage_01.png">
+                    <img class="mypage_02" src="./img4/mypage_02.png">
+                </div>
+            </section>
+            <section id="last">
+                <img class="last_01" src="./img4/last_01.png">
+                <img class="last_02" src="./img4/last_02.png">
+                <h1>어려웠던 일상생활,
+                    <br>
+                    이제는 뿌듯함만 남겨봐요!
+                </h1>
+            </section>
+            <section id="mockup">
+                <img src="./img4/mockup01.png">
+            </section>
+            <section id="team">
+                <div class="sujin">
+                    <a href="https://sujinishappy.github.io/Portfolio_/" target="_blank"><img src="./img4/sujin.png"></a>
+                    <div>
+                        <h1>남수진</h1>
+                        <h1><a href="https://sujinishappy.github.io/Portfolio_/" target="_blank">포트폴리오</a></h1>
+                        <h1>suzie27@naver.com</h1>
+                    </div>
+                </div>
+                <div class="jayoung">
+                    <a href="https://" target="_blank"><img src="./img4/jayoung.png"></a>
+                    <div>
+                        <h1>문자영</h1>
+                        <h1><a href="https://" target="_blank">포트폴리오</h1></a>
+                        <h1>melissa1030@naver.com</h1>
+                    </div>
+                </div>
+                <div class="sumin">
+                    <a href="https://" target="_blank"><img src="./img4/sumin.png"></a>
+                    <div>
+                        <h1>정수민</h1>
+                        <h1><a href="https://" target="_blank">포트폴리오</h1></a>
+                        <h1>bunnienlapin@gmail.com</h1>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img src="./img/footer.png">
+        </footer>
+    </div>
+    <script src="./js/header.js"></script>
+    <script src="./js/index4.js"></script>
+</body>
+</html>

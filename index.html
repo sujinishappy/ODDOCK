@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODDOCK</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index2.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="pointer"></div>
+        <button id="topButton" onclick="scrollToTop()">↑</button>
+        <main>
+            <section id="main">
+                <header id="header">
+                    <span class="logo first"><a href="./index.html">ODDOCK</a></span>
+                    <span class="nav-right">
+                        <ul>
+                            <li class="first"><a href="./index.html">Planning</a></li>
+                            <li class="first"><a href="./video.html">Video</a></li>
+                            <li class="first"><a href="./design_guide.html">Design</a></li>
+                            <li class="first"><a href="./service.html">Service</a></li>
+
+                        </ul>
+                    </span>
+                </header>
+                <img class="main-bg" src="./img/main_bg.png" alt="오똑 메인 배경화면">
+                <img class="main-bg_left" src="./img/main_1.png" alt="오똑 메인 배경화면 목업1">
+                <img class="main-bg_right" src="./img/main_2.png" alt="오똑 메인 배경화면 목업2">
+            </section>
+            <section id="background">
+                <div class="bg_first">
+                    <img class="bg_title" src="./img/bg_title.png" alt="백그라운드 타이틀">
+                    <div class="bg_first_bottom">
+                        <img class="bg_title" src="./img/bg_title_lf.png" alt="백그라운드 그래프">
+                        <img class="bg_title" src="./img/bg_title_rg.png" alt="백그라운드 치료">
+                    </div>
+                </div>
+                <div class="bg_first2">
+                    <img class="bg_title2" src="./img/bg_title2.png" alt="백그라운드 2번쨰 타이틀">
+                    <img class="bg_second" src="./img/bg_title2_bt.png" alt="백그라운드 치료방법">
+                </div>
+                <img class="bg_last" src="./img/bg_last.png" alt="백그라운드 치료법 의문">
+                <img class="bg_last2" src="./img/qustion.png" alt="백그라운드 ?">
+
+            </section>
+            <section id="user_research">
+                <svg id="userLine" width="1700" height="1900" viewBox="0 0 1700 1900" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="lineGradient" x1="0" y1="0" x2="0" y2="1900" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#FFFFFF"/>
+                    <stop offset="88%" stop-color="#926867"/>
+                    <stop offset="100%" stop-color="#B97978"/>
+                    </linearGradient>
+                </defs>
+
+                <path 
+                    d="M0.188477 7.79218C379.593 -20.8959 1662.12 66.6583 1643.9 280.044C1643.9 498.219 895.594 380.195 511.448 526.248C464.976 543.916 45.1439 841.304 1317.23 826.565C1559.23 823.761 1719.85 928.538 1666.11 1020.74C1595.39 1142.07 668.174 1056.39 479.9 1220.89C291.626 1385.38 1554.2 1474.2 1554.2 1474.2C1759.05 1529.46 1290.34 1684.21 940.306 1878.98"
+                    stroke="url(#lineGradient)"
+                    stroke-width="4"
+                    fill="none"/>
+                </svg>
+
+                <div id="users">
+                    <div class="user1"><img src="./img/us_1.png" alt="유저1"></div>
+                    <div class="user2"><img src="./img/us_2.png" alt="유저1"></div>
+                    <div class="user3"><img src="./img/us_3.png" alt="유저1"></div>
+                    <div class="user4"><img src="./img/us_4.png" alt="유저1"></div>
+                    <div class="user5"><img src="./img/us_5.png" alt="유저1"></div>
+                    <div class="user6"><img src="./img/us_6.png" alt="유저1"></div>
+                </div>
+            </section>  
+        <section id="infi">
+            <div class="ticker line1" style="--speed: 14s;">
+                <div class="track">
+                <span>#정서적 충동 발생</span><span>#계획을 세우지 못함</span><span>#자리에 앉아있지 못함</span><span>#자기통제 어려움</span><span>#잦은 지각</span>
+                </div>
+                <div class="track">
+                <span>#정서적 충동 발생</span><span>#계획을 세우지 못함</span><span>#자리에 앉아있지 못함</span><span>#자기통제 어려움</span><span>#잦은 지각</span>
+                </div>
+            </div>
+            <div class="ticker line2" style="--speed: 16s;">
+                <div class="track">
+                <span>#프로젝트 완수에 어려움</span><span>#물건을 잘 잃어버림</span><span>#차례를 기다리지 못함</span><span>#높은 자극 추구</span><span>#실행 능력 저하</span>
+                </div>
+                <div class="track">
+                <span>#프로젝트 완수에 어려움</span><span>#물건을 잘 잃어버림</span><span>#차례를 기다리지 못함</span><span>#높은 자극 추구</span><span>#실행 능력 저하</span>
+                </div>
+            </div>
+            <div class="ticker line3" style="--speed: 18s;">
+                <div class="track">
+                <span>#부주의함</span><span>#의지력 부족</span><span>#산만함</span><span>#행동 능력 저하 </span><span>#내려야 할 역을 놓침</span>
+                </div>
+                <div class="track">
+                <span>#부주의함</span><span>#의지력 부족</span><span>#산만함</span><span>#행동 능력 저하 </span><span>#내려야 할 역을 놓침</span>
+                </div>
+            </div>
+                <div class="infi_text"><img src="./img/infi.png" alt="유저1"></div>
+            </section>
+            <section id="sv_intro">
+                <h3>후회되는 하루는 이제 그만!</h3>
+                <h1 id="typing-text">이제는 성인 ADHD 일상 개선 서비스<br>오똑과 함께해요.</h1>
+            </section>
+            <section id="service">
+                <img src="./img/service_title.png">
+                <div class="card">
+                    <div class="row top">
+                        <img src="./img/sv_1.png" alt="">
+                        <img src="./img/sv_2.png" alt="">
+                        <img src="./img/sv_3.png" alt="">
+                    </div>
+                    <div class="row bottom">
+                        <img src="./img/sv_4.png" alt="">
+                        <img src="./img/sv_5.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="structure">
+                <div class="struct1">
+                    <img src="./img/st_title.png">
+                    <img src="./img/st_1.png">
+                </div>
+                <div class="struct2">
+                    <img src="./img/st_title2.png">
+                    <img src="./img/st_2.png">
+                </div>
+                <div class="struct3">
+                    <img src="./img/st_title3.png">
+                    <div class="struct3_under">
+                        <img src="./img/sb_1.png">
+                        <img src="./img/sb_2.png">
+                        <img src="./img/sb_3.png">
+                    </div>
+                    <a href="./우수수_스토리보드.pdf" download="오똑_스토리보드.pdf" class="ottok-btn" id="openPdf">
+                        <img class="ottok-icon" src="./img/logo.png" alt="" aria-hidden="true">
+                        <span class="ottok-label">오똑 스토리보드 보러가기</span>
+                        <span class="ottok-chevron" aria-hidden="true">›</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img src="./img/footer.png">
+        </footer>
+    </div>
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
