@@ -188,7 +188,7 @@ main{
 }
  :root{
   --stickW: 87vw;
-  --stickH: 21.5vw;
+  --stickH: 21.4vw;
   --gap: 0vw;
   --midW: 10vw;
   --leftW: 31vw;
@@ -564,3 +564,4 @@ section#guide{ height:180vw; background-color:#fff; }
         transform: scale(1.0);
     }
 }
+
