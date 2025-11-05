@@ -627,7 +627,7 @@ padding-bottom: 2.6vw;
     left: 70vw;
     width: 30vw;
     animation-name: float0;
-    animation-duration: 18s;
+    animation-duration: 22s;
 }
 .cloud-03 {
     top: 133vw;
@@ -652,8 +652,8 @@ padding-bottom: 2.6vw;
 }
 @keyframes float0 {
     0%   { transform: translateX(0) translateY(0); opacity: 1; }
-    30%  { transform: translateX(6vw) translateY(4vw); opacity: 0.9; }
-    60%  { transform: translateX(-8vw) translateY(-2vw); opacity: 1; }
+    30%  { transform: translateX(6vw) translateY(2vw); opacity: 0.9; }
+    60%  { transform: translateX(-6vw) translateY(-2vw); opacity: 1; }
     100% { transform: translateX(0) translateY(0); opacity: 0.95; }
 }
 @keyframes float03 {
@@ -1032,5 +1032,6 @@ padding-bottom: 2.6vw;
     box-shadow: .2vw .3vw .2vw #0000003a;
 
 }
+
 
 
