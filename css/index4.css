@@ -902,6 +902,9 @@ padding-bottom: 2.6vw;
         transform: translateY(0);
     }
 }
+#mockup img{
+    width: 100vw;
+}
 /*마지막*/
 #last{
     position: relative;
@@ -971,7 +974,7 @@ padding-bottom: 2.6vw;
 .jayoung,.sumin{
     margin-left: 9vw;
 }
-#team>div>img{
+#team>div>a>img{
     width: 13.5vw;
 }
 #team>div>div>h1{
@@ -1029,3 +1032,4 @@ padding-bottom: 2.6vw;
     box-shadow: .2vw .3vw .2vw #0000003a;
 
 }
+
