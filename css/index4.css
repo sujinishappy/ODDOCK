@@ -868,14 +868,14 @@ padding-bottom: 2.6vw;
 }
 .mypage_01{
     position: absolute;
-    top: 80.4vw;
+    top: 80.2vw;
     left: 14.6vw;
     width: 35.5vw;
 }
 .mypage_02{
     position: absolute;
-    top: 80.4vw;
-    left: 13vw;
+    top: 80.2vw;
+    left: 13.4vw;
     width: 48vw;
 }
 .mypage_content img {
@@ -1032,4 +1032,5 @@ padding-bottom: 2.6vw;
     box-shadow: .2vw .3vw .2vw #0000003a;
 
 }
+
 
