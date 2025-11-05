@@ -28,7 +28,7 @@ const io = new IntersectionObserver((entries) => {
         // 2) svg가 다 열리고 난 다음 이미지 등장
         setTimeout(() => {
         showImagesStepByStep();
-        }, 1100); // CSS에서 1s 걸었으니까 1.1s 뒤에
+        }, 900); // CSS에서 1s 걸었으니까 1.1s 뒤에
 
         io.unobserve(target);
     }
@@ -41,7 +41,7 @@ function showImagesStepByStep() {
     items.forEach((img, idx) => {
     setTimeout(() => {
         img.classList.add("show");
-    }, idx * 350);
+    }, idx * 200);
     });
 }
 });
@@ -60,7 +60,7 @@ const io = new IntersectionObserver((entries) => {
         // 2) svg가 다 열리고 난 다음 이미지 등장
         setTimeout(() => {
         showImagesStepByStep();
-        }, 1100); // CSS에서 1s 걸었으니까 1.1s 뒤에
+        }, 800); // CSS에서 1s 걸었으니까 1.1s 뒤에
 
         io.unobserve(target);
     }
@@ -73,7 +73,7 @@ function showImagesStepByStep() {
     items.forEach((img, idx) => {
     setTimeout(() => {
         img.classList.add("show");
-    }, idx * 350);
+    }, idx * 200);
     });
 }
 });
@@ -87,7 +87,7 @@ const observer = new IntersectionObserver((entries) => {
         img2.classList.add("active");
     } 
     });
-}, { threshold: 0.3}); // 30% 보일 때 트리거
+}, { threshold: 0.2}); // 30% 보일 때 트리거
 
 observer.observe(target);
 });
@@ -107,7 +107,7 @@ const io1 = new IntersectionObserver((entries) => {
         io1.unobserve(section);
     }
     });
-}, { threshold: 0.7});
+}, { threshold: 0.5});
 io1.observe(section);
 const checked = document.querySelector("#checked");
 
@@ -255,7 +255,7 @@ function showImagesStepByStep() {
     items.forEach((img, idx) => {
     setTimeout(() => {
         img.classList.add("show");
-    }, idx * 350);
+    }, idx * 200);
     });
 }
 });
@@ -341,7 +341,7 @@ function showImagesStepByStep() {
     items.forEach((img, idx) => {
     setTimeout(() => {
         img.classList.add("show");
-    }, idx * 350);
+    }, idx * 200);
     });
 }
 });
@@ -403,7 +403,7 @@ const io = new IntersectionObserver((entries) => {
         imgs.forEach((img, idx) => {
         setTimeout(() => {
             img.classList.add("show");
-        }, idx * 300); // 이미지 간격 (0.3초씩)
+        }, idx * 200); // 이미지 간격 (0.3초씩)
         });
 
         io.unobserve(entry.target); // 한 번만 작동
@@ -445,7 +445,7 @@ const io = new IntersectionObserver((entries) => {
         items.forEach((img, idx) => {
         setTimeout(() => {
             img.classList.add("show");
-        }, idx * 900);   // 0.32초 간격
+        }, idx * 800);   // 0.32초 간격
         });
 
         io.unobserve(otalk); // 한 번만
