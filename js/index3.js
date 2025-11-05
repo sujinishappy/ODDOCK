@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lf.classList.add('play');
 
     // 2) 약간의 지연 뒤 오른쪽 카드 모션
-    setTimeout(() => rg.classList.add('play'), 1500);
+    setTimeout(() => rg.classList.add('play'), 800);
 
     obs.unobserve(section); // 한 번만 실행하고 해제 (원하면 제거)
   }, { threshold: 0.9 }); // 섹션이 충분히 보일 때 트리거
@@ -282,4 +282,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.9 });
 
     io.observe(section);
+
   });
